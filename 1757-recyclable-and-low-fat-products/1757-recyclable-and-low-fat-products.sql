@@ -1,3 +1,3 @@
 # Write your MySQL query statement below
 
-select product_id from Products where (low_fats, recyclable) not in (("N","N"));
+select product_id from Products where (low_fats="Y") + (recyclable ="Y")=2;
