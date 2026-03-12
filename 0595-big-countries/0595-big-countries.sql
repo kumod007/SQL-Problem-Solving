@@ -1,5 +1,3 @@
 # Write your MySQL query statement below
 
-select name,population,area from world where area>=3000000
-UNION
-select name,population,area from world where population>=25000000;
+select name,population,area from world where if(area>=3000000 or population>=25000000,1,0)=1;
